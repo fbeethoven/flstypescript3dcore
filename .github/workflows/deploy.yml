@@ -1,4 +1,4 @@
-name: Deploy 3dCore
+name: Deploy ThreeJS Core
 
 on:
   push:

@@ -1,6 +1,12 @@
 import "./style.css";
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import posxImg from "./assets/resources/posx.jpg";
+import negxImg from "./assets/resources/negx.jpg";
+import posyImg from "./assets/resources/posy.jpg";
+import negyImg from "./assets/resources/negy.jpg";
+import poszImg from "./assets/resources/posz.jpg";
+import negzImg from "./assets/resources/negz.jpg";
 
 
 class BasicWorldDemo {
@@ -61,12 +67,12 @@ class BasicWorldDemo {
 
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
-      "src/assets/resources/posx.jpg",
-      "src/assets/resources/negx.jpg",
-      "src/assets/resources/posy.jpg",
-      "src/assets/resources/negy.jpg",
-      "src/assets/resources/posz.jpg",
-      "src/assets/resources/negz.jpg",
+      posxImg,
+      negxImg,
+      posyImg,
+      negyImg,
+      poszImg,
+      negzImg,
     ]);
     this._scene.background = texture;
 
